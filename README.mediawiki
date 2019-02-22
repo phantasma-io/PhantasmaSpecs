@@ -57,91 +57,91 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Standard
 | Draft
 |-
-| [[pepe-6.mediawiki|6]]
+| [[pepe-8.mediawiki|6]]
 | Nexus
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-7.mediawiki|7]]
-| Consensus
+| [[pepe-9.mediawiki|7]]
+| Block Validator
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-8.mediawiki|8]]
+| [[pepe-10.mediawiki|8]]
 | Network Protocol
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-9.mediawiki|9]]
+| [[pepe-11.mediawiki|9]]
 | Fungible Tokens
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-10.mediawiki|10]]
+| [[pepe-12.mediawiki|10]]
 | Non-Fungible Tokens
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-11.mediawiki|11]]
+| [[pepe-13.mediawiki|11]]
 | Side-Chains
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-12.mediawiki|12]]
+| [[pepe-14.mediawiki|12]]
 | Chain Governance
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-13.mediawiki|13]]
+| [[pepe-15.mediawiki|13]]
 | Transaction Gas 
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-14.mediawiki|14]]
-| Masternodes
+| [[pepe-16.mediawiki|14]]
+| Energy Staking
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-15.mediawiki|15]]
+| [[pepe-17.mediawiki|15]]
 | Off-chain Storage
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-16.mediawiki|16]]
+| [[pepe-18.mediawiki|16]]
 | Relay
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-17.mediawiki|17]]
+| [[pepe-19.mediawiki|17]]
 | Account names
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-18.mediawiki|18]]
+| [[pepe-20.mediawiki|18]]
 | Ghost mode
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-19.mediawiki|19]]
+| [[pepe-21.mediawiki|19]]
 | Token Vault
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-20.mediawiki|20]]
+| [[pepe-22.mediawiki|20]]
 | Token Bank
 | Sérgio Flores
 | Standard
