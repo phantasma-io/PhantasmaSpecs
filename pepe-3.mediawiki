@@ -1,0 +1,50 @@
+<pre>
+  PEPE: 3
+  Title: Transaction Binary Format
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-10-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the details of a transaction used in Phantasma chain.
+
+==Motivation==
+
+As most blockchains, a Phantasma block can contain several transactions, which represent a state change in the chain data. It is necessary to define a format that is both compact and flexible enough for general usage.
+
+==Specification==
+
+The binary format of a Phantasma transaction is the following:
+
+{|
+!style="text-align:left;"| Name
+!Size
+ Description
+|-
+|Nexus name
+|varstring
+|Name of the nexus where the transaction has effect.
+|-
+|Chain name
+|varstring
+|Name of the chain where the transaction has effect.
+|-
+|Script 
+|varbyte
+|Phantasma VM script that represents the content of the transaction.
+|-
+|Expiration
+|4
+|UNIX timestamp of when a transaction expires. A transaction can not be included in a block if the block timestamp occurs after the transaction expiration.
+|-
+|Signature Count
+|varint
+|Number of signatures attached to the transaction.
+|}
+
+Then follows a list of signatures based on the Signature Count field:
+
+TODO explain nexus, signatures
