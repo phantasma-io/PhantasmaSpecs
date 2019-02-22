@@ -1,0 +1,221 @@
+<pre>
+  PEPE: 4
+  Title: Virtual Machine
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-10-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the inner workings of the Phantasma Virtual Machine (PVM).
+
+==Motivation==
+
+The Phantasma blockchain should have enough flexibility to let developers embed any type of programmability into a transaction. By allowing each transaction to include a small script, which is then executed by the PVM, this goal can be achieved.
+
+==Specification==
+
+The PVM is a register based virtual machine that executes custom opcodes designed for Phantasma.
+
+==Rationale==
+
+The are obvious advantages to using a specialized virtual machine to approach the goal of programable transactions. 
+Other alternatives could encompass mainstream virtual machines like JVM or WVM, however the complexity of abstracting a general purpose virtual machine to the context of blockchain transactions bring complex problems.
+
+==Opcode List==
+
+All PEPEs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The PEPE must explain how the author proposes to deal with these incompatibilities. PEPE submissions without a sufficient backwards compatibility treatise may be rejected outright.
+
+{|
+!style="text-align:left;"| Name
+!Binary
+ Description
+|-
+|NOP
+|0
+|Does nothing.
+|-
+|MOVE
+|1
+|Copies a register to another, by reference.
+|-
+|COPY
+|2
+|Copies a register to another, by value.
+|-
+|LOAD
+|3
+|Loads a binary value into a register.
+|-
+|PUSH
+|4
+|Pushes a register into the VM stack.
+|-
+|POP
+|5
+|Pops a value from the VM stack into a register.
+|-
+|SWAP
+|6
+|Swaps the values of two registers.
+|-
+|CALL
+|7
+|Calls a function by jumping to it.
+|-
+|EXTCALL
+|8
+|Calls an external function registered in the VM.
+|-
+|JMP
+|9
+|Jumps to a specific instruction.
+|-
+|JMPIF
+|10
+|Jumps to a specific instruction, conditional.
+|-
+|JMPNOT
+|11
+|Jumps to a specific instruction, conditional.
+|-
+|RET
+|12
+|Jumps back to the function callee.
+|-
+|THROW
+|12
+|Aborts execution.
+|-
+|CAT
+|13
+|Concatenates two registers and places the result into another.
+|-
+|SUBSTR
+|14
+|Copies a part of a register into another.
+|-
+|LEFT
+|15
+|Copies a part of a register into another.
+|-
+|RIGHT
+|16
+|Copies a part of a register into another.
+|-
+|NOT
+|17
+|Logical operator.
+|-
+|AND
+|18
+|Logical operator.
+|-
+|OR
+|19
+|Logical operator.
+|-
+|XOR
+|20
+|Logical operator.
+|-
+|EQUAL
+|21
+|Logical operator.
+|-
+|LT
+|22
+|Logical operator.
+|-
+|GT
+|23
+|Logical operator.
+|-
+|LTE
+|24
+|Logical operator.
+|-
+|GTE
+|25
+|Logical operator.
+|-
+|INC
+|26
+|Increments a register.
+|-
+|DEC
+|27
+|Decrements a register.
+|-
+|SIGN
+|28
+|Copies the sign of a register into another.
+|-
+|NEGATE
+|29
+|Negates the sign of a register.
+|-
+|ABS
+|30
+|Absolute value of a register.
+|-
+|ADD
+|31
+|Adds two registers, result it put into another.
+|-
+|SUB
+|32
+|Subtracts two registers, result it put into another.
+|-
+|MUL
+|33
+|Multiples two registers, result it put into another.
+|-
+|DIV
+|34
+|Divides two registers, result it put into another.
+|-
+|MOD
+|35
+|Modulus two registers, result it put into another.
+|-
+|SHL
+|36
+|Shift lefts a register.
+|-
+|SHR
+|36
+|Shift right a register.
+|-
+|MIN
+|37
+|Selects the minimum value of two registers and put the result into another register.
+|-
+|MAX
+|38
+|Selects the maximum value of two registers and put the result into another register.
+|-
+|THIS
+|39
+|Puts the active context into a register.
+|-
+|CTX
+|40
+|Puts a registered context into a register.
+|-
+|SWITCH
+|41
+|Switches the current context.
+|-
+|PUT
+|42
+|Sets the field of a struct.
+|-
+|GET
+|43
+|Gets the field of a struct.
+|}
+
+TODO explain contexts, stack, register sets, etc

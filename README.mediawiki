@@ -21,26 +21,26 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Meta
 | Active
 |-
-| [[pepe-2.mediawiki|2]]
-| Virtual Machine
+| [[pepe-2.mediawiki|5]]
+| Block Binary Format
 | Sérgio Flores
 | Standard
-| Draft
+| Active
 |-
 | [[pepe-3.mediawiki|3]]
 | Transaction Binary Format
 | Sérgio Flores
 | Standard
-| Draft
+| Active
 |-
-| [[pepe-4.mediawiki|4]]
-| Event Notification
+| [[pepe-4.mediawiki|2]]
+| Virtual Machine
 | Sérgio Flores
 | Standard
-| Draft
+| Active
 |-
-| [[pepe-5.mediawiki|5]]
-| Block Binary Format
+| [[pepe-5.mediawiki|4]]
+| Event Notification
 | Sérgio Flores
 | Standard
 | Draft
