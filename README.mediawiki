@@ -64,13 +64,13 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-9.mediawiki|7]]
-| Block Validator
+| Consensus
 | Sérgio Flores
 | Standard
 | Draft
 |-
 | [[pepe-10.mediawiki|8]]
-| Network Protocol
+| Side-Chains
 | Sérgio Flores
 | Standard
 | Draft
@@ -88,7 +88,7 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-13.mediawiki|11]]
-| Side-Chains
+| Network Protocol
 | Sérgio Flores
 | Standard
 | Draft

@@ -1,0 +1,25 @@
+<pre>
+  PEPE: 8
+  Title: Nexus
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the concept of Nexus in the Phantasma blockchain.
+
+==Motivation==
+
+Phantasma is a complex blockchain where multiple side-chains coexist. It is necessary to have something that unifies and connects all chains together, and that is the concept called Nexus.
+
+==Specification==
+
+The Nexus is a singular entitity where the global shared state of Phantasma is stored. It works as a central repository from where it is possible to fetch lists of existing chains and tokens.
+A Nexus also has a unique name, which is included on each transaction, in order to prevent a specific transaction to be copied from a test enviroment and applied in another location.
+Thus the official public Nexus has the name of "mainnet", the official development Nexus has the name of "testnet", and local development nexus will usually adopt the "simnet" name.
+It is possible for the Phantasma technology to be used as an enterprise private consortium , where a custom unique Nexus name can be used.
+
+TODO explain chains, nfts, etc
