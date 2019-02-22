@@ -87,200 +87,224 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Standard
 | Draft
 |-
-| [[pepe-13.mediawiki|11]]
+| [[pepe-13.mediawiki|10]]
+| External Tokens
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-14.mediawiki|11]]
 | Network Protocol
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-14.mediawiki|12]]
+| [[pepe-15.mediawiki|12]]
 | Chain Governance
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-15.mediawiki|13]]
+| [[pepe-16.mediawiki|13]]
 | Transaction Gas 
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-16.mediawiki|14]]
+| [[pepe-17.mediawiki|14]]
 | Energy Staking
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-17.mediawiki|15]]
+| [[pepe-18.mediawiki|15]]
 | Off-chain Storage
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-18.mediawiki|16]]
+| [[pepe-19.mediawiki|16]]
 | Relay
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-19.mediawiki|17]]
+| [[pepe-20.mediawiki|17]]
 | Account names
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-20.mediawiki|18]]
+| [[pepe-21.mediawiki|18]]
 | Ghost mode
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-21.mediawiki|19]]
+| [[pepe-22.mediawiki|19]]
 | Token Vault
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-22.mediawiki|20]]
+| [[pepe-23.mediawiki|20]]
 | Token Bank
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-21.mediawiki|21]]
+| [[pepe-24.mediawiki|21]]
 | Token Exchange
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-22.mediawiki|22]]
+| [[pepe-25.mediawiki|22]]
 | Stable Token
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-23.mediawiki|23]]
+| [[pepe-26.mediawiki|23]]
 | Seed Phrase
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-24.mediawiki|24]]
+| [[pepe-27.mediawiki|24]]
 | Contract ABI
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-25.mediawiki|25]]
+| [[pepe-28.mediawiki|25]]
 | Debug Map
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-26.mediawiki|26]]
+| [[pepe-29.mediawiki|26]]
 | System Calls
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-27.mediawiki|27]]
+| [[pepe-30.mediawiki|27]]
 | URI Scheme
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-28.mediawiki|28]]
+| [[pepe-31.mediawiki|28]]
 | Browser Extension
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-29.mediawiki|29]]
+| [[pepe-32.mediawiki|29]]
 | Contract Storage
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-30.mediawiki|30]]
+| [[pepe-33.mediawiki|30]]
 | Oracles
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-31.mediawiki|31]]
+| [[pepe-34.mediawiki|31]]
 | Contract Callbacks
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-32.mediawiki|32]]
+| [[pepe-35.mediawiki|32]]
 | Contract Secrets
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-33.mediawiki|33]]
+| [[pepe-36.mediawiki|33]]
 | Apps
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-34.mediawiki|34]]
+| [[pepe-37.mediawiki|34]]
 | Transaction Order
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-35.mediawiki|35]]
+| [[pepe-38.mediawiki|35]]
 | Chain Plugins
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-36.mediawiki|36]]
+| [[pepe-39.mediawiki|36]]
 | Interoperability
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-37.mediawiki|37]]
+| [[pepe-40.mediawiki|37]]
 | RPC
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-38.mediawiki|38]]
+| [[pepe-41.mediawiki|38]]
 | Custom Contracts
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-39.mediawiki|39]]
+| [[pepe-42.mediawiki|39]]
 | Account Messaging
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-40.mediawiki|40]]
+| [[pepe-43.mediawiki|40]]
 | Contact List
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-41.mediawiki|41]]
+| [[pepe-44.mediawiki|41]]
 | Contract Serialization
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-42.mediawiki|42]]
-| Distribution Pool
+| [[pepe-45.mediawiki|42]]
+| Fee Distribution
 | Sérgio Flores
 | Standard
 | Draft
 |-
-| [[pepe-43.mediawiki|42]]
+| [[pepe-46.mediawiki|42]]
 | Identity
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-47.mediawiki|42]]
+| Token Marketplace
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-48.mediawiki|42]]
+| OTC trades
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-49.mediawiki|42]]
+| Crowdsales
 | Sérgio Flores
 | Standard
 | Draft

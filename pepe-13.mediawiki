@@ -1,0 +1,24 @@
+<pre>
+  PEPE: 13
+  Title: External Tokens
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the concept of external token as applied to the Phantasma blockchain.
+
+==Motivation==
+
+A external token is a cryptographic token that is emitted outside of the Phantasma blockchain, however is has been brought into Phantasma through the interopability protocol.
+
+==Specification==
+
+A external token can be either fungible or non-fungible and can be transported both in and out of Phantasma chain.
+
+
+TODO more info
+

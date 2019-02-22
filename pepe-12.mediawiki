@@ -1,0 +1,28 @@
+<pre>
+  PEPE: 12
+  Title: Non-Fungible Tokens
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the concept of non-fungible token as applied to the Phantasma blockchain.
+
+==Motivation==
+
+A fungible token is a cryptographic token that is emitted on the blockchain by an entity which determines a supply. The non-fungible aspect means that each token of the same type is completly unique, compared to fungible tokens that are interchangeable.
+
+==Specification==
+
+The Phantasma blockchain has native support for non-fungible tokens, which can be created with certain parameters like name and supply.
+A specific address becames the token administrator with capacity to mint new tokens (as specified by the supply). The minting of tokens is a completly transparent action visible in the blockchain.
+
+==Contract Methods==
+
+A non-fungible token implements the following ABI:
+
+TODO describe ABI
+
