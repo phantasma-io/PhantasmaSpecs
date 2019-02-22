@@ -1,0 +1,29 @@
+<pre>
+  PEPE: 53
+  Title: Multi-signatures
+  Authors: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Draft
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the multisignature scheem employed in Phantasma blockchain.
+
+==Motivation==
+
+Sometimes it is required to restrict a contract who belong to multiple parties, in a way that specific action requires permission from two or more involved parties.
+
+==Specification==
+
+TODO
+
+==Contract ABI==
+
+TODO 
+
+==Implementation==
+
+TODO more info
+

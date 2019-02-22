@@ -166,7 +166,7 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-26.mediawiki|23]]
-| Seed Phrase
+| Contract Compilation
 | Sérgio Flores
 | Standard
 | Draft
@@ -317,6 +317,18 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 |-
 | [[pepe-51.mediawiki|42]]
 | Token Routes
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-52.mediawiki|23]]
+| Seed Phrase
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-53.mediawiki|23]]
+| Multi-signatures
 | Sérgio Flores
 | Standard
 | Draft
