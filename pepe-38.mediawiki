@@ -1,0 +1,27 @@
+<pre>
+  PEPE: 38
+  Title: Chain Plugins
+  Authors: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Draft
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the plugin system used in Phantasma blockchain.
+
+==Motivation==
+
+The Phantasma blockchain nodes will save the required data to mantain the system, including blocks, transactions and contract state, but sometimes might be useful to gather additional data from the chain for analisys or other motive.
+
+==Specification==
+
+A blockchain plugin is an optional component that can be installed in a Phantasma node, that will listen for any minted block and all included transactions and do a specific action on it.
+Usually this will be extracting data and saving it to disk, but there are other possibilities. Note that the plugins listen for data newly included in the chain, and that data is immutable, so it is not possible to write plugins that alter transactions or blocks in any way. 
+
+==Implementation==
+
+TODO more info
+
+The .NET module "Phantasma.Blockchain" contains several reference plugin implementations of the system described in this PEPE.

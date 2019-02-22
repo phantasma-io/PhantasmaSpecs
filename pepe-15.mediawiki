@@ -1,0 +1,29 @@
+<pre>
+  PEPE: 15
+  Title: Chain Governance
+  Authors: Sérgio Flores <sergio@phantasma.io>, Alex Paixão <alex@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the governance system of the Phantasma blockchain.
+
+==Motivation==
+
+It is often desired to have a governance method in a trustless system, to allow the users to decide the outcome of events, or change public parameters fairly, in way that eliminates or at least minimizes the collusion between intervening parties.
+
+==Specification==
+
+Phantasma provides a native contract ABI that allows an issue to be proposed and then voted by users, until an outcome is decided.
+The voting system calculates the voting power of each user by taking into account their staked token amount, modified by a quadratic function, in order to reduce the amount of power that can be exerted by groups owning a large stake.
+
+==Implementation==
+
+The .NET module "Phantasma.Blockchain" includes the GovernanceContract class that implements the ABI described by this PEPE.
+The Phantasma App implements a frontend for the voting system described in this PEPE.
+
+TODO more info
+

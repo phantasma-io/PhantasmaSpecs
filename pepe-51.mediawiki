@@ -1,0 +1,34 @@
+<pre>
+  PEPE: 51
+  Title: Token Routing
+  Authors: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Draft
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the token routing system employed in Phantasma blockchain.
+
+==Motivation==
+
+Sometimes might be useful to automate certain actions in the blockchain, like calling a contract every time a certain action or event triggers.
+
+==Specification==
+
+TODO
+
+==Fee Mechanism==
+
+An automatic system like this has potential for abuse if fully unconstrained, however the system used in Phantasma required that a fee is paid for each triggered action.
+Cascading actions will then quickly drain the energy from the trigger owner, unless limits are put into place.
+
+==Contract ABI==
+
+TODO 
+
+==Implementation==
+
+TODO more info
+

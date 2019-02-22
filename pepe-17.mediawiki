@@ -1,0 +1,41 @@
+<pre>
+  PEPE: 17
+  Title: Energy Staking
+  Authors: Sérgio Flores <sergio@phantasma.io>, Alex Paixão <alex@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the energy staking system employed in Phantasma blockchain.
+
+==Motivation==
+
+Having the users pay per transaction makes a blockchain quite expensive to use, however making the system full free to use opens the blockchain to spam attacks.
+Phantasma employs a dual token approach where users can charge their account once with a staking token and then able to generate energy token from that, which is itself used as the transaction payment.
+This system scales well for power users and large organizations who need more energy and can stake more tokens in order to produce more energy.
+
+==Specification==
+
+The Phantasma provides a native contract ABI that allows an issue to be proposed and then voted by users, until an outcome is decided.
+The voting system calculates the voting power of each user by taking into account their staked token amount, modified by a quadratic function, in order to reduce the amount of power that can be exerted by groups owning a large stake.
+
+==Proxy Distribution==
+
+It can be useful to have a way for new users to use the system without any upfront cost. The energy staking system allows specifying proxy addresses who will be part of the distribution mechanism.
+This allows for example a single user to stake tokens and generate energy for all his family or friends, who can then perform transactions without owning any staking tokens.
+The proxy contracts also have permission to do the energy claiming themselves, which gives them enough autonomy to use the system without supervision from the stake owner.
+
+==Contract ABI==
+
+TODO 
+
+==Implementation==
+
+The .NET module "Phantasma.Blockchain" includes the EnergyContract class that implements the ABI described by this PEPE.
+The Phantasma App implements a frontend for the voting system described in this PEPE.
+
+TODO more info
+

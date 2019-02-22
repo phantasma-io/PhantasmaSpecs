@@ -1,0 +1,33 @@
+<pre>
+  PEPE: 34
+  Title: Contract Callbacks
+  Authors: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Draft
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the contract callback system employed in Phantasma blockchain.
+
+==Motivation==
+
+Sometimes a smart contract does not have all info necessary to proceed, and waiting for that info is necessary in order to resume execution.
+Once the data is available, the contract execution can be resumed. This system can be somehow compared to the async programming model used in several programming languages.
+
+==Specification==
+
+It is necessary to add a new opcode to the Phantasma VM to support contract callbacks. This opcode when execute essentially pauses the script execution, and the blockchain saves the script state, allowing resume in the future.
+
+==Fee Mechanism==
+
+A callback mecanism essentially splits a single transaction into several transactions, which increases the fees for the whole process.
+Furthermore, the resume of a transaction needs to be automated, so that for the user sending the transaction it works like a fire and forget action. 
+The proposal is to have block validators triggering the transaction continuation, however note that the transaction should spend the energy from the original sender and not the resumer, so a mecanism to support this is necessary.
+
+
+==Implementation==
+
+TODO more info
+
