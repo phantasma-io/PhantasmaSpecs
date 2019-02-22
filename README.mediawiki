@@ -220,7 +220,7 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-35.mediawiki|32]]
-| Contract Secrets
+| Encrypted Inputs
 | Sérgio Flores
 | Standard
 | Draft
@@ -316,7 +316,7 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-51.mediawiki|42]]
-| Token Routes
+| Airdrops
 | Sérgio Flores
 | Standard
 | Draft
@@ -335,6 +335,12 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 |-
 | [[pepe-54.mediawiki|23]]
 | Disk Binary Format
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-55.mediawiki|42]]
+| Token Routes
 | Sérgio Flores
 | Standard
 | Draft

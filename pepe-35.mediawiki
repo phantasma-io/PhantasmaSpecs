@@ -1,0 +1,31 @@
+<pre>
+  PEPE: 35
+  Title: Encrypted Inputs
+  Authors: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Draft
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the input encryption mechanism used in Phantasma smart contracts.
+
+==Motivation==
+
+When multiple parties interact with each other, sometimes it is necessary to provide a way to hide each other input until everyone committed their inputs.
+The most trivial example of this is a rock paper scissor game, when implemented in a traditional blockchain system, it is possible for a player to cheat by waiting and examining the opponent transaction before deciding.
+A more advanced example would be a voting system, where the result can only be decided after everyone votes, but the votes should hidden before counting to prevent result manipulation.
+
+==Specification==
+
+Phantasma introduces the concept of encrypted inputs, which are a tuple of nonce and message, both encrypted with a one-time-use AES key.
+The tuple is shuffled and then encrypted, and the result of this step is what is sent as input to a smart contract, together with the nonce and an checksum of the pre-encrypted result.
+The smart contract can receive the encrypted secret, however in the initial step the only thing that the contract can do is saving the input temporarily on the storage.
+
+In a later step, when the party wants to reveal the secret, it can send the AES key as input to the contract, which can then use to obtain the secret payload.
+
+
+==Implementation==
+
+TODO more info

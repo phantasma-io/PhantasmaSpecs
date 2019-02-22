@@ -1,0 +1,50 @@
+<pre>
+  PEPE: 16
+  Title: Transaction Fees
+  Authors: Sérgio Flores <sergio@phantasma.io>, Alex Paixão <alex@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the details about the transaction fees used in Phantasma.
+
+==Motivation==
+
+Since a blockchain is a system fully open to the public, it is necessary to define a cost per action done, in order to greatly reduce the required effort to spam the blockchain.
+
+==Specification==
+
+===Calculation===
+
+The cost of a Phantasma transaction is defined by the amount of operations done by the transaction scripts.
+Since the Phantasma VM is turing complete, the dynamic transaction fees is what prevents a transaction from executing an infinite loop.
+
+Every opcode has a different pre-determined cost, which is roughly based on the computational power used to execute it.
+
+Each transaction script should start with a call to a method AllowGas, which specifies the gas price the user wants to pay, together with the maximum amount the user is willing to pay.
+The AllowGas method temporarily holds captive the maximum amount of gas specified by the user, to prevent it from being available in middle of the script (eg: sending it to other address).
+The transaction script should always finish with a call to SpendGas, which spends the actual consumed gas (usually less than the maximum) and returns the change back to the user address.
+
+
+===Distribution===
+
+Transaction fees usually are distributed among miners (or block producers, depending on the block system used by the blockchain).
+However Phantasma adopts a different approach where a percentage of the fees goes back to the distributed application owners, while the rest goes indeed to the block producers.
+This incentivizes the creation of distributed apps using Phantasma, and not only that, it also incentivizes the creation of quality dapps with good user retention, in order to maximize profit of dapp owners.
+
+Each Phantasma side-chain can define a distribution table for the fees.
+
+==Contract ABI==
+
+void AllowGas(Address from, Address to, BigInteger price, BigInteger limit)
+void SpendGas(Address from)
+
+==Implementation==
+
+The .NET module "Phantasma.Blockchain" includes the GasContract class that implements the ABI described by this PEPE.
+
+TODO more info
+

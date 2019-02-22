@@ -20,6 +20,14 @@ It is often desired to have a governance method in a trustless system, to allow 
 Phantasma provides a native contract ABI that allows an issue to be proposed and then voted by users, until an outcome is decided.
 The voting system calculates the voting power of each user by taking into account their staked token amount, modified by a quadratic function, in order to reduce the amount of power that can be exerted by groups owning a large stake.
 
+The governance has the following phases:
+
+# An issue is raised, along with a voting deadline and a counting deadline and list of possible values
+# Anyone can vote, by staking a certain amount of tokens, which in turn is used to calculate the voting power
+# The actual vote is encrypted using PEPE-35
+# The vote contents can only be revealed after the voting deadline, which returns the tokens back to the user. 
+# The actual vote is only counted if revealed before the counting deadline. Otherwise has no effect.
+
 ==Implementation==
 
 The .NET module "Phantasma.Blockchain" includes the GovernanceContract class that implements the ABI described by this PEPE.
