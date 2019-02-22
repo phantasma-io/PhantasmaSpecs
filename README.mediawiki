@@ -124,7 +124,7 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-19.mediawiki|19]]
-| Relay
+| Relay Network
 | Sérgio Flores
 | Standard
 | Draft
@@ -341,6 +341,12 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 |-
 | [[pepe-55.mediawiki|55]]
 | Token Routes
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-56.mediawiki|55]]
+| Data Marketplace
 | Sérgio Flores
 | Standard
 | Draft

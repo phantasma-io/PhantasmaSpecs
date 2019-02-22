@@ -1,0 +1,53 @@
+<pre>
+  PEPE: 18
+  Title: Account names
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the off-chain content storage system in Phantasma blockchain.
+
+==Motivation==
+
+A distributed way to store files and other content is often desired, but storing it on a chain is cumbersome, due to the immutability of the blockchain.
+Phantasma provides a mechanism to store content off-chain, but simultaneous linking the content to the blockchain, allowing for example smart contracts to access the data.
+
+==Specification==
+
+Content storage in Phantasma is defined by two parts, uploading and accessing.
+Note that this PEPE describe the most low level storage part of content, which consists of storing data blocks. For higher level file system specification, check PEPE-50.
+
+===Side-Chain===
+
+Content storage uses a separate side-chain denominated "storage".
+
+===Uploading===
+
+A user that wants to store content in Phantasma needs to follow the following steps:
+
+# Negotiate price per data block and duration offchain using the Phantasma Relay (read PEPE-19).
+# Stake tokens in Storage chain along with message to block producers using a Shared Secret(read PEPE-35). 
+# Establish link to target and upload file data block.
+# Target sends transaction with file hash.
+
+===Maintenance===
+
+Target will need to stake energy every day to show activity and stake his reputation. 
+After some time block producers will challenge him with a random offset + size if he fails he loses his stake and the contract is canceled.
+If the challenge is correctly answered then the contract is renewed. The uploader has then a deadline to upload the next challenge together with renew fee.
+
+==Contract ABI==
+
+TODO 
+
+==Implementation==
+
+The .NET module "Phantasma.Blockchain" includes the EnergyContract class that implements the ABI described by this PEPE.
+The Phantasma App implements a frontend for the voting system described in this PEPE.
+
+TODO more info
+

@@ -1,0 +1,34 @@
+<pre>
+  PEPE: 19
+  Title: Relay Network
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the off-chain relay network used to augment the Phantasma blockchain.
+
+==Motivation==
+
+The blockchain has several use-cases however it is not a panacea solution that should be used for everything.
+Specially anything that requires low latency is a bad fit for blockchain, due to waiting times introduced by mempool and block generation.
+A good example is a chat application, where users prefer the messages to be instantly delivered instead of waiting several seconds or even minutes for messages to arrive.
+Phantasma provides a mechanism to distribute messages off-chain, while using the cryptograhic primitives provided by the blockchain.
+
+==Specification==
+
+The Phantasma Relay provides several features:
+- Message delivery: Encrypted message communication between two Phantasma addresses
+- Bargaining system: Off-chain matching engine useful for multiple situations (check PEPE-18 and PEPE-48)
+- Discovery service:  Keyword-based discovery mechanism (check PEPE-56)
+
+==Implementation==
+
+The .NET module "Phantasma.P2P" includes the Relay class that implements the system described by this PEPE.
+The Phantasma App implements a frontend for the messaging system described in this PEPE.
+
+TODO more info
+
