@@ -1,0 +1,26 @@
+<pre>
+  PEPE: 6
+  Title: EdDSA
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the details of a EdDSA signature as used in the Phantasma chain.
+
+
+==Motivation==
+
+In public-key cryptography, Edwards-curve Digital Signature Algorithm (EdDSA) is a digital signature scheme using a variant of Schnorr signature based on Twisted Edwards curves.[1] It is designed to be faster than existing digital signature schemes without sacrificing security.
+Phantasma preferred signature scheme is Ed25519, which is a EdDSA signature scheme using SHA-512 and Curve25519.
+Besides the speed benefits, there are also some security benefits. One of the more interesting security benefits is that it is immune to several side channel attacks.
+No secret array indices. The code never reads or writes data from secret addresses in RAM; the pattern of addresses is completely predictable. The code is therefore immune to cache-timing attacks, hyperthreading attacks, and other side-channel attacks that rely on leakage of addresses through the CPU cache.
+No secret branch conditions. The code never performs conditional branches based on secret data; the pattern of jumps is completely predictable. The code is therefore immune to side-channel attacks that rely on leakage of information through the branch-prediction unit.
+
+
+==Specification==
+
+TODO explain binary format, others
