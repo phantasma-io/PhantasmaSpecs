@@ -1,0 +1,70 @@
+<pre>
+  PEPE: 2
+  Title: Block Binary Format
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-10-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the details of a block used in Phantasma chain.
+
+==Motivation==
+
+As any blockchain, Phantasma content is represented as sequence of blocks, each one linked to the previous. It is necessary to define a format that is both compact and flexible enough for general usage.
+
+==Specification==
+
+The binary format of a Phantasma block is the following:
+
+{|
+!style="text-align:left;"| Name
+!Size
+ Description
+|-
+|Height
+|4
+|Heigh of the block.
+|-
+|Timestamp 
+|4
+|Unix timestamp of the block.
+|-
+|Previous Hash 
+|32
+|Hash of the previous block.
+|-
+|Chain Address
+|32
+|Address of the chain where the block was minted.
+|-
+|Transaction Count
+|2
+|Number of transaction inside the block.
+|}
+
+Then follows a list of entries based on the Transaction Count field:
+
+{|
+!style="text-align:left;"| Name
+!Size
+ Description
+|-
+|Hash
+|32
+|Hash of transaction.
+|-
+|Event Count 
+|2
+|Amount of events in the transaction.
+|-
+|Events 
+|N
+|List of events.
+|}
+
+Finally, the last field is the Payload, which is a variable length byte array.
+
+TODO explain events, hashes, payload
