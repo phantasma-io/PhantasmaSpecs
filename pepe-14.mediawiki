@@ -1,0 +1,39 @@
+<pre>
+  PEPE: 14
+  Title: Network Protocol
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the network protocol used for Phantasma nodes.
+
+==Motivation==
+
+A blockchain is a distributed system where different geo-separated nodes received and process transactions and generate blocks. In order for those nodes to communicate, a efficient and compact binary protocol is required.
+
+==Specification==
+
+TODO more info
+
+===REQUEST opcode===
+TODO
+
+===LIST opcode===
+TODO
+
+===MEMPOOL opcode===
+TODO
+
+===BLOCKS opcode===
+TODO
+
+===ERROR opcode===
+TODO
+
+==Implementation==
+
+The .NET module "Phantasma.P2P" contains a reference implementation of the network protocol.

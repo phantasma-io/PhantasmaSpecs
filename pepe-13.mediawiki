@@ -2,7 +2,7 @@
   PEPE: 13
   Title: External Tokens
   Author: Sérgio Flores <sergio@phantasma.io>
-  Type: Meta
+  Type: Standard
   Status: Active
   Created: 2018-11-2
 </pre>

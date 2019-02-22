@@ -2,7 +2,7 @@
   PEPE: 3
   Title: Transaction Binary Format
   Author: Sérgio Flores <sergio@phantasma.io>
-  Type: Meta
+  Type: Standard
   Status: Active
   Created: 2018-10-2
 </pre>

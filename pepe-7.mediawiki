@@ -2,7 +2,7 @@
   PEPE: 7
   Title: Address format
   Author: Sérgio Flores <sergio@phantasma.io>
-  Type: Meta
+  Type: Standard
   Status: Active
   Created: 2018-10-2
 </pre>
