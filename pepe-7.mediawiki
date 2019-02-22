@@ -1,0 +1,25 @@
+<pre>
+  PEPE: 7
+  Title: Address format
+  Author: Sérgio Flores <sergio@phantasma.io>
+  Type: Meta
+  Status: Active
+  Created: 2018-10-2
+</pre>
+
+==Abstract==
+
+This PEPE specifies the format used by Phantasma account addresses.
+
+==Motivation==
+
+As most blockchains, Phantasma represents a user by an account address. The address is used as the public way of exchanging transactions and other info using Phantasma.
+
+==Specification==
+
+The address is actually a derivation of the public-private keypair used by accounts. The following algoritm can be used to generate a Phantasma address from a public key:
+
+# Take the 32 bytes that make the public key and prefix it with the byte 74.
+# Use base58 encoding on the previous step to obtain the address
+
+TODO explain base58, checksums etc
