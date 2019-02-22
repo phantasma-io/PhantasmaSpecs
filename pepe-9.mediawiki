@@ -1,0 +1,51 @@
+<pre>
+  PEPE: 9
+  Title: Consensus
+  Authors: Sérgio Flores <sergio@phantasma.io>, Alex Paixão <alex@phantasma.io>
+  Type: Standard
+  Status: Active
+  Created: 2018-11-2
+</pre>
+
+==Abstract==
+
+This PEPE describes the consensus mechanism used by the Phantasma blockchain.
+
+==Motivation==
+
+A blockchain as a public distributed system where anyone can submit information has as requirement a pre-defined consensus mechanism that lets every participant agree in the appending of new data and respective ordering.
+
+==Specification==
+
+Phantasma uses a variation of Proof of Stake consensus mechanism, where a sub-set of nodes denominated "block producers" validate incoming transactions and reach a consensus on what to accept and reject.
+
+===Block Producers===
+
+====Election====
+Phantasma allows any user to propose itself as a block producer by staking a pre-determined amount of SOUL.
+
+====Spot Opening====
+Phantasma chain automatically unlocks new block producer slots as certain transaction thresholds are reached.
+
+====Voting====
+New votes require using PEPE-15 to fill the new available block producer position.
+
+====Defection====
+Phantasma includes a on-chain slashing mechanism that allows any user to force defection of a block producer as long as proof of incompentence is submitted.
+This mechanism uses PEPE-15 to decide on the result.
+
+===Epochs===
+
+The generation of new blocks is done over epoches, who can be defined as time slices where every epoch is attributed to a different block producer.
+During an epoch, only the designated block producer is responsible for accepting new blocks.
+Once the epoch terminates, it is validated by the next producer who can then distribute the fees back to the block producer.
+While an epoch is running, it can be slashed at any time by other block producers, if either a invalid block is detected or the active block producer is unresponsive.
+A slashing implies cancelation of active epoch and beginning of another with the next block producer. 
+In case of invalid blocks detection a rollback of blocks is applied and the included transactions getting back to the memory pool.
+The finality of the Phantasma chain is therefore determined by the length of an epoch. 
+
+====Rewards====
+Block producers receive tokens collected as fees as described in PEPE-16. To optimize the collection of fees, they are gathered for multiple epoches before getting distributed daily.
+
+===Side-chains===
+Each side-chain has a separated epoch occurring simultaneous, avoiding a side-chain to prevent others from advancing.

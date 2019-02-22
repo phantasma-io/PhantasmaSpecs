@@ -19,12 +19,25 @@ A more advanced example would be a voting system, where the result can only be d
 
 ==Specification==
 
-Phantasma introduces the concept of encrypted inputs, which are a tuple of nonce and message, both encrypted with a one-time-use AES key.
+Phantasma introduces the concept of encrypted inputs, which come in two varities, 'shared secrets' who use a single phase commit and 'locked secrets', who use a two phase commit mechanism.
+The content of Shared secrets is instantly available to smart contracts, with the disadvantage that block producers have full access to the content too.
+In the other hand, the content of Locked secrets is kept secret from everyone but the sender, but dapp interactions are slower due to its two phase commit mechanism.
+
+===Shared Secrets===
+A shared secret is encrypted using the current epoch public key, and can be decrypted instantly by block producers when executing pending transactions.
+Plus the content is available to everyone at epoch end, making it a short lived secret.
+Due to this characteristics, Shared Secrets utility shine when security can be sacrificed for speed.
+
+===Locked Secrets===
+
+Locked secrets are split into two phases, in the first the user sends the encrypted secret to the chain, waits for some event then sends the decryption key in a second step, unlocking the secret to everyone.
+Due to this characteristics, Locked Secrets utility shine when security is very important and speed can be sacrificed.
+
+Described in more detail, the first phase commit is  tuple of nonce and message, both encrypted with a one-time-use AES key.
 The tuple is shuffled and then encrypted, and the result of this step is what is sent as input to a smart contract, together with the nonce and an checksum of the pre-encrypted result.
 The smart contract can receive the encrypted secret, however in the initial step the only thing that the contract can do is saving the input temporarily on the storage.
 
 In a later step, when the party wants to reveal the secret, it can send the AES key as input to the contract, which can then use to obtain the secret payload.
-
 
 ==Implementation==
 
