@@ -106,7 +106,7 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 | Draft
 |-
 | [[pepe-16.mediawiki|13]]
-| Transaction Gas 
+| Transaction Fees
 | Sérgio Flores
 | Standard
 | Draft
@@ -329,6 +329,12 @@ First review [[pepe-1.mediawiki|PEPE-1]]. Then clone the repository and add your
 |-
 | [[pepe-53.mediawiki|23]]
 | Multi-signatures
+| Sérgio Flores
+| Standard
+| Draft
+|-
+| [[pepe-54.mediawiki|23]]
+| Disk Binary Format
 | Sérgio Flores
 | Standard
 | Draft
