@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-This PEPE specifies the multisignature scheem employed in Phantasma blockchain.
+This PEPE specifies the multisignature scheme employed in Phantasma blockchain.
 
 ==Motivation==
 
@@ -17,7 +17,9 @@ Sometimes it is required to restrict a contract who belong to multiple parties, 
 
 ==Specification==
 
-TODO
+Runtime.IsWitness() should be called several times for each expected witness address.
+If all addresses are required as witnesses, then the script can fail early as soon as one of those checks return false.
+Otherwise for an N out M witnesses, the script should increment a counter N each time it finds a positive value, then compare with M.
 
 ==Contract ABI==
 
@@ -25,5 +27,14 @@ TODO
 
 ==Implementation==
 
-TODO more info
+Sample PVM code
+
+load $witness 0x{addressStr}
+push $witness
+extcall "Address()"
+extcall "Runtime.IsWitness"
+pop $result
+jmpif $result, @success
+throw
+@success: nop
 
